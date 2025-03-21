@@ -1,4 +1,4 @@
-# Module 09 Team Activity  - MVC: View
+# Module 09 Team Activity  - MVC: view
 
 In this activity, we will build off last weeks activity (with some changes) to setup a view for our MVC application. Instead of having a console view, we will create a GUI view using Java Swing.
 
@@ -13,7 +13,7 @@ When working in teams, remember do not let one person do all the work. Make sure
 
 ## Learning Objectives
 This team activity is designed to help you understand the following concepts:
-* Understand the Model-View-Controller (MVC) design pattern
+* Understand the Model-view-Controller (MVC) design pattern
 * Implement a GUI view using Java Swing
 * Work with an interface, so different types of views are interchangeable
 * Explore the singleton design pattern

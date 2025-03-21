@@ -21,10 +21,11 @@ public class Flight implements Comparable<Flight> {
         return airlineCode + flightNumber;
     }
 
+    public String getAirlineCode() { return airlineCode; }
 
     @Override
     public int compareTo(Flight o) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return this.getFlightID().compareTo(o.getFlightID());
     }
 
     @Override
@@ -54,7 +55,7 @@ public class Flight implements Comparable<Flight> {
         System.out.println(flights);
 
         // TODO: Create a lambda expression to sort the flights by flight number
-
+        flights.sort((flight1, flight2) -> f1.getAirlineCode().compareTo(f2.getAirlineCode()));
         System.out.println(flights);
 
 

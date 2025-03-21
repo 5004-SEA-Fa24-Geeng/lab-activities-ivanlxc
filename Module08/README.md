@@ -1,6 +1,6 @@
 # Module 08 Team Activity  - MVC: Controller
 
-In this team activity, we will explore the controller component in the Model-View-Controller (MVC) design pattern. The controller is the component that manages the interaction between the model and the view. It is responsible for processing client input, updating the model, and updating the view.
+In this team activity, we will explore the controller component in the Model-view-Controller (MVC) design pattern. The controller is the component that manages the interaction between the model and the view. It is responsible for processing client input, updating the model, and updating the view.
 
 ## Grading
 Grades for team activities will be based on attendance and notes. You must attend, and as a team you need to generate notes that we can confirm your work. Ideally, you upload the notes as a PDF to the team meeting after you build them out. 
@@ -136,7 +136,7 @@ public enum Operation {
 
 👉🏽  Discussion - where should you place Operation. It is fair to note there are good arguments for both the Model and Controller (but not the view). So as a team decide as you work through your reasoning. 
 
-### Step 2: Create The View
+### Step 2: Create The view
 
 At this point, we can create a *simple* view that will display the two numbers and the result of the operation. Create a class called ConsoleView, in the view package. 
 
@@ -332,7 +332,7 @@ The above interface may be a bit too detailed (specially based on where you plac
 :fire: Now make sure to update your controller to use the interface instead of the concrete class. 
 
 
-#### View and Controller Interface
+#### view and Controller Interface
 
 Within the Controller, the .run() method ends up being tightly coupled with the view. This is because the loop to run the program is hosted there, and as such, if we change views, we would still need to be passing in the string "exit" to close the program. This may not at all be what we want. Instead, if we create an interface that allows the view to send messages to the controller, we can then have the controller decide what to do with those messages while the view handles all the interaction. 
 
